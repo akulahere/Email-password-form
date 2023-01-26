@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		438C47BB3A808F86A1F93313 /* Pods_Email_password_login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA9099DEB938693B8D68A04 /* Pods_Email_password_login.framework */; };
 		667CCCF42982ADC50021E110 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667CCCF32982ADC50021E110 /* AppDelegate.swift */; };
 		667CCCF62982ADC50021E110 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667CCCF52982ADC50021E110 /* SceneDelegate.swift */; };
 		667CCCF82982ADC50021E110 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667CCCF72982ADC50021E110 /* ViewController.swift */; };
 		667CCCFB2982ADC50021E110 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 667CCCF92982ADC50021E110 /* Main.storyboard */; };
 		667CCCFD2982ADC60021E110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 667CCCFC2982ADC60021E110 /* Assets.xcassets */; };
 		667CCD002982ADC60021E110 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 667CCCFE2982ADC60021E110 /* LaunchScreen.storyboard */; };
+		667CCD082982B0280021E110 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 667CCD072982B0280021E110 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		667CCCFC2982ADC60021E110 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		667CCCFF2982ADC60021E110 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		667CCD012982ADC60021E110 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		667CCD072982B0280021E110 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		71575D07BC9C401E9A568AE3 /* Pods-Email-password-login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Email-password-login.debug.xcconfig"; path = "Target Support Files/Pods-Email-password-login/Pods-Email-password-login.debug.xcconfig"; sourceTree = "<group>"; };
+		7824C29A8ED4C08B6BEC9DC7 /* Pods-Email-password-login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Email-password-login.release.xcconfig"; path = "Target Support Files/Pods-Email-password-login/Pods-Email-password-login.release.xcconfig"; sourceTree = "<group>"; };
+		FDA9099DEB938693B8D68A04 /* Pods_Email_password_login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Email_password_login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438C47BB3A808F86A1F93313 /* Pods_Email_password_login.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47D06E8706A3A70C251CEFAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDA9099DEB938693B8D68A04 /* Pods_Email_password_login.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		667CCCE72982ADC50021E110 = {
 			isa = PBXGroup;
 			children = (
 				667CCCF22982ADC50021E110 /* Email-password-login */,
 				667CCCF12982ADC50021E110 /* Products */,
+				F21742F45B4E22B2378B8495 /* Pods */,
+				47D06E8706A3A70C251CEFAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +73,7 @@
 		667CCCF22982ADC50021E110 /* Email-password-login */ = {
 			isa = PBXGroup;
 			children = (
+				667CCD072982B0280021E110 /* GoogleService-Info.plist */,
 				667CCCF32982ADC50021E110 /* AppDelegate.swift */,
 				667CCCF52982ADC50021E110 /* SceneDelegate.swift */,
 				667CCCF72982ADC50021E110 /* ViewController.swift */,
@@ -67,6 +85,15 @@
 			path = "Email-password-login";
 			sourceTree = "<group>";
 		};
+		F21742F45B4E22B2378B8495 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71575D07BC9C401E9A568AE3 /* Pods-Email-password-login.debug.xcconfig */,
+				7824C29A8ED4C08B6BEC9DC7 /* Pods-Email-password-login.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 667CCD042982ADC60021E110 /* Build configuration list for PBXNativeTarget "Email-password-login" */;
 			buildPhases = (
+				A8B99AD52E5F9C8A66277FCA /* [CP] Check Pods Manifest.lock */,
 				667CCCEC2982ADC50021E110 /* Sources */,
 				667CCCED2982ADC50021E110 /* Frameworks */,
 				667CCCEE2982ADC50021E110 /* Resources */,
+				EB3751A1C5989C0708F849C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				667CCD002982ADC60021E110 /* LaunchScreen.storyboard in Resources */,
+				667CCD082982B0280021E110 /* GoogleService-Info.plist in Resources */,
 				667CCCFD2982ADC60021E110 /* Assets.xcassets in Resources */,
 				667CCCFB2982ADC50021E110 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A8B99AD52E5F9C8A66277FCA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Email-password-login-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB3751A1C5989C0708F849C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Email-password-login/Pods-Email-password-login-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Email-password-login/Pods-Email-password-login-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Email-password-login/Pods-Email-password-login-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		667CCCEC2982ADC50021E110 /* Sources */ = {
@@ -282,6 +354,7 @@
 		};
 		667CCD052982ADC60021E110 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71575D07BC9C401E9A568AE3 /* Pods-Email-password-login.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +383,7 @@
 		};
 		667CCD062982ADC60021E110 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7824C29A8ED4C08B6BEC9DC7 /* Pods-Email-password-login.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
